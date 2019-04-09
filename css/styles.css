@@ -11,7 +11,8 @@ body {
 
 /* Style the links inside the sidenav */
 #mySidenav a {
-    position: absolute; /* Position them relative to the browser window */
+    position: fixed; /* Position them relative to the browser window */
+    z-index: 1; /*prioritet u prikazivanje*/
     left: -100px; /* Position them outside of the screen */
     transition: 0.3s; /* Add transition on hover */
     padding: 15px; /* 15px padding */
@@ -19,6 +20,7 @@ body {
     text-decoration: none; /* Remove underline */
     font-size: 20px; /* Increase font size */
     color: white; /* White text color */
+    border: 1px solid white;
     border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
   }
   
@@ -28,41 +30,53 @@ body {
   
   /* The about link: 120px from the top with a green background */
   #about {
-    top: 120px;
+    top: 140px;
     background-color: green;
   }
   
   #blog {
-    top: 180px;
+    top: 210px;
     background-color: green;
   }
   
   #projects {
-    top: 240px;
+    top: 280px;
     background-color: green;
   }
   #faqs {
-    top: 300px;
+    top: 350px;
     background-color: green;
   }
   
   #contact {
-    top: 360px;
+    top: 420px;
     background-color: green;
   }
   img {
       text-align: center;
       width: 100%;
   }
+  /*uredjenje forme*/
+  form {
+    width:70%;
+    margin: 0 auto;
+  }
+
+  input[type=submit] {
+    color: white;
+    background-color: green;
+  }
+  
   footer {
      background-color: black;
+     border-top:green 1px solid;
   }
   /* odavde ide index page*/
   #indexbody {
     display: flex;
     justify-content: center;
   }
-  .typewriter h1 {
+  .olimpija h1 {
     
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid green; /* The typwriter cursor */
@@ -73,7 +87,7 @@ body {
       typing 4.5s steps(38,end),
       kursor .75s step-end infinite;
   }
-  .typewriter a {
+  .olimpija a {
     color: green;
     text-decoration: none; /* Remove underline */
     font-size: 40px; 
