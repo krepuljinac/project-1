@@ -57,3 +57,36 @@ body {
   footer {
      background-color: black;
   }
+  /* odavde ide index page*/
+  #indexbody {
+    display: flex;
+    justify-content: center;
+  }
+  .typewriter h1 {
+    
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid green; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 4.5s steps(38,end),
+      kursor .75s step-end infinite;
+  }
+  .typewriter a {
+    color: green;
+    text-decoration: none; /* Remove underline */
+    font-size: 40px; 
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes kursor {
+    from, to { border-color: transparent }
+    50% { border-color: green; }
+  }
