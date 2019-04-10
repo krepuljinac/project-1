@@ -70,11 +70,39 @@ h2 {
   text-decoration: none; /* Remove underline */
     font-size: 20px; /* Increase font size */
 }
-#pitanja img {
+/*#pitanja img {
 color:white;
 width: 25px;
     height: 25px;
     margin: 5px;
+}*/
+/*glavni*/
+#glavni {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+#glavni div {
+  border: 1px solid green;
+  border-radius: 15px;
+
+}
+#glavni i {
+  color: darkmagenta;
+  padding: 20px;
+ 
+}
+.jbnifa {
+  text-align: center;
+  background-color: white;
+}
+
+#glavni h4 {
+  margin: 10px;
+  color: royalblue;
+}
+#glavni p {
+  color: white;
 }
   /*uredjenje forme*/
   form {
@@ -88,6 +116,7 @@ width: 25px;
   }
   
   footer {
+
     background-image: linear-gradient(black, green) ;
      
   }
