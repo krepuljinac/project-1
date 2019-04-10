@@ -2,6 +2,16 @@ header {
     background-color: black;
     height: 100px;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+header img {
+  height: 80px;
+  width: 80px;
+  padding: 20px;
+  margin-top: 15px;
 }
 body {
     background-color: black;
@@ -15,7 +25,7 @@ h2 {
 /* Style the links inside the sidenav */
 #mySidenav a {
     position: fixed; /* Position them relative to the browser window */
-    z-index: 1; /*prioritet u prikazivanje*/
+    z-index: 2; /*prioritet u prikazivanje*/
     left: -100px; /* Position them outside of the screen */
     transition: 0.3s; /* Add transition on hover */
     padding: 15px; /* 15px padding */
