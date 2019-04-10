@@ -5,36 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css">
     <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">-->
     <title>main</title>
+
 </head>
 
 <body>
+    <!--zaglavlje-->
     <header></header>
+
+
+
+    <!--navigacija-->
     <div id="mySidenav" class="sidenav">
         <a href="#" id="about">About</a>
         <a href="#" id="blog">Blog</a>
         <a href="#" id="projects">Projects</a>
-        <a href="#" id="faqs">FAQs</a>
-        <a href="#" id="contact">Contact</a>
+        <a href="#pitanja" id="faqs">FAQs</a>
+        <a href="#kontakt" id="contact">Contact</a>
     </div>
     <div><img src="img/leadimg.png" alt=""></div>
     <!--photoshoped free img from pexels by Bess Hamiti (@bess_hamiti) -->
-    <div></div>
-    <div></div>
-    <div class="m-5 forma">
+    
+    <div class="d-flex">
+
+    </div>
+    
+    
+    <!--cesto postavljana pitanja-->
+    <div class="container" id="pitanja">
+        <h2>Frequently Asked Questions</h2>
+        <div class="panel-group mt-5" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#skupljeni1">
+                            1. What's the average price of your web sites?</a>
+                    </h4>
+                </div>
+                <div id="skupljeni1" class="panel-collapse collapse in">
+                    <div class="panel-body">It is negotiable. It depends on the size and complexity. Price range
+                        therefor goes from 15€ to infinity. </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#skupljeni2">
+                            2. What are the payment methods?</a>
+                    </h4>
+                </div>
+                <div id="skupljeni2" class="panel-collapse collapse">
+                    <div class="panel-body">Credit cards, cash, stash, kidneys. We except everything. </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#skupljeni3">
+                            3. Diagnosis?</a>
+                    </h4>
+                </div>
+                <div id="skupljeni3" class="panel-collapse collapse">
+                    <div class="panel-body">It is obvius.</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#skupljeni4">
+                            4. What's your opinion on Toyota Prius?</a>
+                    </h4>
+                </div>
+                <div id="skupljeni4" class="panel-collapse collapse">
+                    <div class="panel-body">Sorry but we do not have one. We are not vegans.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--kontakt forma-->
+    <div class="m-5" id="kontakt">
+        <h2>Contact form</h2>
         <form class="form-group mt-5">
             <input class="form-control mt-3" type="text" name="ime" placeholder="name">
             <input class="form-control mt-3" type="email" name="email" placeholder="E-mail">
-            <input class="form-control mt-3" type="text" name="tema" placeholder="subject">   
-            </fieldset>
+            <input class="form-control mt-3" type="text" name="tema" placeholder="subject">
         </form>
         <form class="form-group mt-3">
             <hr>
-            <textarea class="form-control" name="p6" id="" cols="70" rows="7" placeholder="Indulge yourself..."></textarea>
+            <textarea class="form-control" name="p6" id="" cols="70" rows="7"
+                placeholder="Indulge yourself..."></textarea>
         </form>
         <form class="form-group mt-3">
             <input class="form-control" type="submit" value="Send" style="width:100%">
@@ -43,9 +118,27 @@
 
 
 
+    <!--podnozje-->
 
-
-    <footer></footer>
+    <footer class="row">
+        <div class="col-md-6" id="maksima">
+            "Bolje je živjeti sto godina kao milijunaš, nego sedam dana u bijedi." <br>
+            Bob Rock, grupa TNT
+        </div>
+        <div class="col-md-6">
+            <a href="tel:+38162398462"><img class="thumbnail" data-toggle="tooltip" title="Call me"
+                    src="img/telephone-svgrepo-com.svg" alt=""></a>
+            <a href="#"><img class="thumbnail" data-toggle="tooltip" title="find me on face"
+                    src="img/facebook-logo-svgrepo-com.svg" alt=""></a>
+            <a href="mailto:gilipter1@gmail.com"><img class="thumbnail" data-toggle="tooltip" title="write me"
+                    src="img/gmail-svgrepo-com.svg" alt=""></a>
+            <a href="https://www.instagram.com/gilipter1/"><img class="thumbnail" data-toggle="tooltip"
+                    title="instagram" src="img/instagram-logo-svgrepo-com.svg" alt=""></a>
+            <a href="https://www.youtube.com/user/naduvasmijaja"><img class="thumbnail" data-toggle="tooltip"
+                    title="tube" src="img/youtube-symbol-svgrepo-com.svg" alt=""></a>
+        </div>
+        <div class="col-12">Copyright &copy; Gilipter1 studios 2019.All rights reserved</div>
+    </footer>
 </body>
 
 </html>
