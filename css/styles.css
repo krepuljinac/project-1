@@ -107,11 +107,11 @@ width: 25px;
   background-color: white;
 }
 
-#glavni h4 {
+h4 {
   margin: 10px;
   color: royalblue;
 }
-#glavni p {
+p {
   color: white;
 }
   /*uredjenje forme*/
@@ -138,7 +138,7 @@ width: 25px;
   #maksima {
     color:royalblue;
   }
-  .thumbnail {
+  .slicka {
     width: 25px;
     height: 25px;
     margin: 5px;
@@ -158,7 +158,7 @@ width: 25px;
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 2px; /* Adjust as needed */
     animation: 
-      typing 4.5s steps(38,end),
+      typing 3.5s steps(45,end),
       kursor .75s step-end infinite;
   }
   .olimpija a {
@@ -178,3 +178,8 @@ width: 25px;
     from, to { border-color: transparent }
     50% { border-color: green; }
   }
+
+  #projektiba {
+    margin-top:100px;
+  }
+  
