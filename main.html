@@ -18,7 +18,9 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--link za font awsome ikonice upotrebljene za izradu sadrzaja-->
     <link rel="stylesheet" href="./css/styles.css">
+    <!--link za css posle linka za bootstrap kako bi imao prioritet u izvrsavanju-->
     <title>main</title>
 
 </head>
@@ -26,27 +28,27 @@
 <body>
     <!--zaglavlje-->
     <header class="row">
-        <a class="col-3" href="main.html"><img data-toggle="tooltip" title="I'm just watching you" src="img/logo.JPG" alt=""></a>
-   
+        <a class="col-3" href="main.html"><img data-toggle="tooltip" title="I'm just watching you" src="img/logo.JPG"
+                alt=""></a>
+    <!--bilo je predvidjeno jos materijala za zaglavlje u 9 kolona-->
     </header>
 
-
-
-    <!--navigacija-->
+    <!--navigacija sa linkovima-->
     <div id="mySidenav" class="sidenav">
         <a href="#glavni" id="about">About</a>
-        <a href="http://magarecaposla.blog.rs/" data-toggle="tooltip"
-        title="link pro forme..nije za slab stomak" id="blog">Blog</a>
+        <a href="http://magarecaposla.blog.rs/" data-toggle="tooltip" title="link pro forme..nije za slab stomak"
+            id="blog">Blog</a>
         <a href="projects.html" id="projects">Projects</a>
         <a href="#pitanja" id="faqs">FAQs</a>
         <a href="#kontakt" id="contact">Contact</a>
     </div>
     <div><img src="img/leadimg.png" alt=""></div>
-    <!--photoshoped free img from pexels by Bess Hamiti (@bess_hamiti) -->
+    <!--fotoshopovana slika sa pexels od Bess Hamiti (@bess_hamiti) -->
 
-    <div class="d-flex row mt-5" id="glavni">
+    <!--glavna sekcija-->
+    <div class="d-flex row mt-5" id="glavni"> <!--d-flex da bi dobio flexbox container-->
         <div class="p-2 col-md-3">
-            <div class="jbnifa"><i class="far fa-file-code display-3"></i></div>
+            <div class="jbnifa"><i class="far fa-file-code display-3"></i></div> <!--font awsome ikone i velicina podesena pomocu displeya-->
             <h4>Front-end development & design</h3>
                 <p> Web sites and html5 apps creation for companies and entrepreneurs. Making web shops. Attractive and
                     modern design.</p>
@@ -81,7 +83,7 @@
     <!--cesto postavljana pitanja-->
     <div class="container" id="pitanja">
         <h2>Frequently Asked Questions</h2>
-        <div class="panel-group mt-5" id="accordion">
+        <div class="panel-group mt-5" id="accordion"> <!--panel group klasa kolapsibilna ..akordion. prema vodicu sa w3-->
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
@@ -155,22 +157,22 @@
 
     <!--podnozje-->
 
-    <footer class="row">
+    <footer class="row"> <!--klasa row gde je sadrzaj podeljen u 2 *6kolona za sve uredjaje od mediuma pa navise-->
         <div class="col-md-6" id="maksima">
             "Bolje je živjeti sto godina kao milijunaš, nego sedam dana u bijedi." <br>
             Bob Rock, grupa TNT
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6"> <!--hiperlinkovane kontakt slicice-->
             <a href="tel:+38162398462"><img class="slicka" data-toggle="tooltip" title="Call me"
                     src="img/telephone-svgrepo-com.svg" alt=""></a>
             <a href="#"><img class="slicka" data-toggle="tooltip" title="find me on face"
                     src="img/facebook-logo-svgrepo-com.svg" alt=""></a>
             <a href="mailto:gilipter1@gmail.com"><img class="slicka" data-toggle="tooltip" title="write me"
                     src="img/gmail-svgrepo-com.svg" alt=""></a>
-            <a href="https://www.instagram.com/gilipter1/"><img class="slicka" data-toggle="tooltip"
-                    title="instagram" src="img/instagram-logo-svgrepo-com.svg" alt=""></a>
-            <a href="https://www.youtube.com/user/naduvasmijaja"><img class="slicka" data-toggle="tooltip"
-                    title="tube" src="img/youtube-symbol-svgrepo-com.svg" alt=""></a>
+            <a href="https://www.instagram.com/gilipter1/"><img class="slicka" data-toggle="tooltip" title="instagram"
+                    src="img/instagram-logo-svgrepo-com.svg" alt=""></a>
+            <a href="https://www.youtube.com/user/naduvasmijaja"><img class="slicka" data-toggle="tooltip" title="tube"
+                    src="img/youtube-symbol-svgrepo-com.svg" alt=""></a>
         </div>
         <div class="col-12">Copyright &copy; Gilipter1 studios 2019.All rights reserved</div>
     </footer>

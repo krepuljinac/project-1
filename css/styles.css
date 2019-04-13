@@ -1,11 +1,14 @@
+
+/*css prevashodno jer mi je laksi od bootstrapa i zato sto jos nisam naucio da izmenjam psotojece bootstrap palete*/
+
 header {
-    background-color: black;
-    height: 100px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
+  background-color: black;
+  height: 100px;
+  width: 100%;
+  position: fixed; /*fiksiran kod skrola*/
+  top: 0;
+  left: 0;
+  z-index: 1; /*index jedan zbog preklapanja..najvisi index za sidebar */
 }
 header img {
   height: 80px;
@@ -14,79 +17,73 @@ header img {
   margin-top: 15px;
 }
 body {
-    background-color: black;
-    font-family: Consolas;
+  background-color: black;
+  font-family: Consolas;
 }
 h2 {
   color: darkmagenta;
   text-align: center;
 }
 
-/* Style the links inside the sidenav */
+/* Stilizacija linkova unutar navigacije..w3  */
 #mySidenav a {
-    position: fixed; /* Position them relative to the browser window */
-    z-index: 2; /*prioritet u prikazivanje*/
-    left: -100px; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
-    padding: 15px; /* 15px padding */
-    width: 120px; /* Set a specific width */
-    text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Increase font size */
-    color: white; /* White text color */
-    border: 1px solid white;
-    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
-  }
+  position: fixed; /* fixno pozicioniranje kako bi stajala i pored skrolovanja stranice */
+  z-index: 2; /*prioritet u prikazivanje*/
+  left: -100px; /* pozicioniranje van ekrana */
+  transition: 0.3s; /* tranzicija za hover */
+  padding: 15px; 
+  width: 120px; 
+  text-decoration: none; /* sklanja podvlaku */
+  font-size: 20px; 
+  color: white; 
+  border: 1px solid white;
+  border-radius: 0 5px 5px 0; /*zaobljene desne ivice*/
+}
   
-  #mySidenav a:hover {
-    left: 0; /* On mouse-over, make the elements appear as they should */
-  }
+#mySidenav a:hover {
+  left: 0; /* kad predjete misem element odnosno div se pojavljuje tj pomera u levo */
+}
   
-  /* The about link: 120px from the top with a green background */
-  #about {
-    top: 140px;
-    background-color: green;
-  }
+/*pozicioniranje linkova navigacije zbog fixnog polozaja zaglavlja*/ 
+#about {
+  top: 140px;
+  background-color: green;
+}
   
-  #blog {
-    top: 210px;
-    background-color: green;
-  }
+#blog {
+  top: 210px;
+  background-color: green;
+}
   
-  #projects {
-    top: 280px;
-    background-color: green;
-  }
-  #faqs {
-    top: 350px;
-    background-color: green;
-  }
+#projects {
+  top: 280px;
+  background-color: green;
+}
+#faqs {
+  top: 350px;
+  background-color: green;
+}
   
-  #contact {
-    top: 420px;
-    background-color: green;
-  }
-  img {
-      text-align: center;
-      width: 100%;
-  }
+#contact {
+  top: 420px;
+  background-color: green;
+}
+img {
+  text-align: center;
+  width: 100%;
+}
 /*faqs*/
 #pitanja {
- width: 80%;
+  width: 80%;
   color: white;
   background-color: black;
 }
 #pitanja a {
   color: royalblue;
-  text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Increase font size */
+  text-decoration: none; 
+  font-size: 20px; 
 }
-/*#pitanja img {
-color:white;
-width: 25px;
-    height: 25px;
-    margin: 5px;
-}*/
-/*glavni*/
+
 #glavni {
   width: 80%;
   margin: auto;
@@ -114,72 +111,69 @@ h4 {
 p {
   color: white;
 }
-  /*uredjenje forme*/
-  form {
-    width:80%;
-    margin: 0 auto;
-  }
+/*uredjenje forme*/
+form {
+  width:80%;
+  margin: 0 auto;
+}
 
-  input[type=submit] {
-    color: white;
-    background-color: green;
+input[type=submit] {
+  color: white;
+  background-color: green;
   }
   
-  footer {
-
-    background-image: linear-gradient(black, green) ;
-     
-  }
-  footer div {
-    text-align: center;
-    padding: 20px;
-    font-size: small;
-  }
-  #maksima {
-    color:royalblue;
-  }
-  .slicka {
-    width: 25px;
-    height: 25px;
-    margin: 5px;
-  }
+footer {
+  background-image: linear-gradient(black, green) ;     
+}
+footer div {
+  text-align: center;
+  padding: 20px;
+  font-size: small;
+}
+#maksima {
+  color:royalblue;
+}
+.slicka {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
 
 
-  /* odavde ide index page*/
-  #indexbody {
-    display: flex;
-    justify-content: center;
-  }
-  .olimpija h1 {
-    
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 4px solid green; /* kursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 2px; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(45,end),
-      kursor .75s step-end infinite;
-  }
-  .olimpija a {
-    color: green;
-    text-decoration: none; /* Remove underline */
-    font-size: 30px;
-  }
+/* odavde ide index page..iskoristen vodic za animaciju*/
+#indexbody {
+  display: flex;
+  justify-content: center;
+}
+.olimpija h1 {   
+  overflow: hidden; /* da se sarzaj ne bi video do pocetka animacije */
+  border-right: 4px solid green; /* kursor */
+  white-space: nowrap; /* jednolinijski sadrzaj */
+  margin: 0 auto; /* skrolujuci efekat dok se navodno kuca jer pozicionira sve na sredinu */
+  letter-spacing: 2px; 
+  animation: 
+    typing 3.5s steps(45,end), /*ime, duzina trajanja i broj koraka animacije kucanja */
+    kursor .75s step-end infinite; /*ime, duzina trajanja i neogranicen broj koraka  kursora */
+}
+.olimpija a {
+  color: green;
+  text-decoration: none; 
+  font-size: 30px;
+}
   
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
+/* efekat kucanja-animacija */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
   
-  /* The typewriter cursor effect */
-  @keyframes kursor {
-    from, to { border-color: transparent }
-    50% { border-color: green; }
-  }
-
-  #projektiba {
-    margin-top:100px;
-  }
+/* efekat kursora-animacija */
+@keyframes kursor {
+  from, to { border-color: transparent }
+  50% { border-color: green; }
+}
+/*project.html*/
+#projektiba {
+  margin-top:100px; /*margina zbog zaglavlja*/
+}
   
